@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Specifies title of browser tab-->
+    <title>Student Bio</title>
+
+    <!--Adding the style tag to incorporate CSS into the html-->
+    <style>
+        
+        /*Using the html tag body to designate I want to apply formatting*/
+        body {
+            /*Removes margin on all sides from the body of the entire page*/
+            margin: 0;
+            padding: 0;
+            background: #efeee7;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #333;
+            /*Makes the line/section height be 1.5 times the size of the font*/
+            line-height: 150%
+        }
+
+        header {
+            background: #333;
+        }
+        
+        h1 {
+            /*creates space at the top of the student bio text*/
+            padding: 20px 0;
+            /*removes the extra space at the top created by the padding*/
+            margin: 0;
+            margin-bottom: 20px;
+            font-size: 28px;
+            color: #eee;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        /*making the color of links red*/
+        a {
+            color: #d21034;
+        }
+
+        .container {
+            /*setting the container width to 1024*/
+            width: 1024px;
+            /*removes margins within the container and centers everything within the container by using 0*/
+            margin: 0 auto;
+        }
+
+        /*using # to designate 'id=' tags*/
+        #main-bio,
+        #contact-info,
+        #bio-image {
+                    /*making all the elements within the container float left*/
+                    float: left;
+        }
+
+        #main-bio {
+            /*setting main-bio section width to 70% so that it allows the rest of the contents to fit in same line*/
+            width: 70%;
+        }
+
+        #contact-info {
+            /*setting the width of the contact info section to 30% to allow it to fit within the same line*/
+            width: 30%;
+        }
+
+        #bio-image {
+            /*Specifying the height and width of the image so that it maintains the original size*/
+            width: 200px;
+            height: 200px;
+            /*creates spacing between the image and the main bio section*/
+            margin-right: 20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <!--Using header to separate the student bio section from the rest of the page-->
+    <header>
+        <h1>Student Bio</h1>
+    </header>
+
+    <!--Adding container class on the div tag to create a section separate from the header-->
+    <div class="container">
+        
+        <!--We create a section id here to separate elements and make it easier for styling-->
+        <section id="main-bio">
+
+            <!--Specifies the name-->
+            <h2>Yerson Arvelo</h2>
+
+            <!--Inserting an image. added class=bio-image to use as id/class in css-->
+            <img id="bio-image" alt="formula1" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUSEhIVFRUVFhcYFRUWFxcVFxUVFRcXFhYXGBcYHiggGRolHRcVITIhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGhAQGy8dHyA3LS0rLTAuLSsrLS0rLTctLSstLS4rKy8rLS0tLS0tLS0tLS0tLS0tMC0rLysrNS0uLf/AABEIAKgBLAMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAAAQIDBQYHBAj/xAA/EAACAgECAwYDBgMGBQUAAAABAgADEQQhBRIxBhNBUWFxIjKBByNSkaGxQmLBFBUWM5LhQ1NygtFzosLw8f/EABgBAQEBAQEAAAAAAAAAAAAAAAABAgME/8QAKhEBAQEAAQMDAQcFAAAAAAAAAAERAgMhMRJBUaEyYXGR0eHwE1OBscH/2gAMAwEAAhEDEQA/AO2REQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQESQJOIFMYlUQKcRiVRApiVRAiJMQKYgxAREQEREBERAREQEREBERAREQEREBERAREQEREBERiAkgRECYkRAmJEQJiRECYkRAmREQEjEmIERJiBESYgRIZgOpA99pM519ofbHhVTmnUJ3uoRG5Qa3xXnplsbjI8M9IHQ0YHoQfY5lU5H2F0mmXTHVXd3apJKWtYyKqoPiDKSCCCDkMPDym3f4wrfai6mxsZC1EO2B1wM74lxNbdiMTkna7tVqVBQ2uufwk1n81wZHZDttWtYqsa6xxks7WJsNgoBewE/7zU4ufPq3jmTXXInKqvtOBZeWt+XvShyWZimdnVVJHTw36eOdtm/xZWdz3/oRTaB49QAfQR6PvY/r3NvG/k2+JofEe2KIpFdrmwhQi2I65bmwzfEuOmDjPpiZLsvx6623uLORyFd2sVtwFKADlCgDduud8GTlxxvpdT1zcs/FtUSZBmXUiRmUloFUZlvmjngXJMs95JFkC9ERAREQEREBERAREQEREBESIExIjMCYmN7Q8TTTaa7UWc3JXWzNyY5+mBy525skYztNL7Idv6beYta5OGIqfAsUKc5ABIbIZRse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" >
+
+            <!--A paragraph about myself and weblink. added class=main-bio-->
+            <p>
+            I am excited to be learning about full stack web development.  My hobbies are cars, trading stocks and reading. 
+            <a href="http://www.google.com">www.google.com</a>
+            </p>
+        </section>
+
+        <!--Here again we create a section to separate elements for more efficient styling
+            we can include both the h2 and the ul in a single id/class-->
+        <section id="contact-info">
+            <h2>Contact Info</h2>
+                <ul>
+                    <li>Email: <a href="#">ya2206@caa.columbia.edu</a></li>
+                    <li>Github: <a href="#">yarvelo23</a></li>
+                    <li>Portfolio: <a href="#">coming soon!</a></li>
+                </ul>
+        </section>
+
+    <!--close out with the div tag below to indicate that all the above elements are within the container-->
+    </div>
+
+
+</body>
+
+</html>
